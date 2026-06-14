@@ -4,7 +4,7 @@ import os
 
 # Where the SQLite demo database lives. SQLite keeps the demo zero-setup;
 # the query layer uses standard SQL so the same templates port to PostgreSQL.
-DB_PATH = os.environ.get("RETAILMIND_DB", "retailmind.db")
+DB_PATH = os.environ.get("INSIGHTSQL_DB", "insightsql.db")
 
 # If set, the intent parser calls Claude to map a question -> KPI + params.
 # If empty, a deterministic rule-based parser is used instead, so the app

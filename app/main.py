@@ -21,7 +21,7 @@ from .service import answer_question, SAMPLE_QUESTIONS
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / "static"
 
-app = FastAPI(title="RetailMind Text-to-SQL (demo)", version="1.0.0")
+app = FastAPI(title="InsightSQL Text-to-SQL (demo)", version="1.0.0")
 
 
 class AskRequest(BaseModel):

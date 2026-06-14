@@ -1,6 +1,7 @@
 """SQLite schema + deterministic demo-data seeding.
 
-The schema is a small retail star model (the five data areas RetailMind named:
+The schema is a small retail star model (the five core data areas a retail
+analytics MVP needs:
 Sales, Inventory, Product Master, Branch Master, Shrinkage). Data is seeded
 relative to "today" so that relative ranges like "yesterday" and "this week"
 always have rows to return when someone runs the demo.

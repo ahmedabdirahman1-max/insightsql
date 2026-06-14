@@ -8,4 +8,4 @@ from app.db import build_database
 
 if __name__ == "__main__":
     path = build_database(DB_PATH)
-    print(f"Seeded RetailMind demo database at: {path}")
+    print(f"Seeded InsightSQL demo database at: {path}")

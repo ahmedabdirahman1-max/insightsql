@@ -1,4 +1,4 @@
-# RetailMind — Governed Text-to-SQL for Retail Analytics
+# InsightSQL — Governed Text-to-SQL for Retail Analytics
 
 Ask a retail database questions in plain English and get an answer, the exact SQL
 that produced it, and the assumptions behind it.
@@ -22,7 +22,7 @@ a silent mis-join, a double-count across a join fan-out, or "this week" read off
 the wrong timezone. A retailer then reorders stock on a figure that was never
 right.
 
-RetailMind removes that failure mode by construction:
+InsightSQL removes that failure mode by construction:
 
 1. **A governed KPI layer.** Every metric (`sales_total`, `shrinkage_by_branch`,
    `out_of_stock`, …) is a hand-written, parameterised SQL template in
