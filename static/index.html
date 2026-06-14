@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RetailMind — Ask your retail data</title>
+<style>
+  :root { --bg:#0f1320; --card:#181d2e; --line:#2a3147; --txt:#e7ebf5;
+          --muted:#9aa4be; --accent:#5b8cff; --good:#3ecf8e; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif;
+         background:var(--bg); color:var(--txt); }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .row { display:flex; gap:8px; }
+  input { flex:1; padding:12px 14px; border-radius:10px; border:1px solid var(--line);
+          background:var(--card); color:var(--txt); font-size:15px; }
+  button { padding:12px 18px; border:0; border-radius:10px; background:var(--accent);
+           color:#fff; font-weight:600; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .chips { margin:14px 0 4px; display:flex; flex-wrap:wrap; gap:8px; }
+  .chip { font-size:13px; color:var(--muted); border:1px solid var(--line);
+          background:transparent; padding:6px 10px; border-radius:999px; cursor:pointer; }
+  .chip:hover { color:var(--txt); border-color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px;
+          padding:18px; margin-top:18px; }
+  .answer { font-size:17px; font-weight:600; }
+  .meta { color:var(--muted); font-size:13px; margin-top:6px; }
+  .badge { display:inline-block; font-size:11px; color:var(--good);
+           border:1px solid var(--good); border-radius:6px; padding:1px 6px; margin-left:6px; }
+  details { margin-top:14px; }
+  summary { cursor:pointer; color:var(--accent); font-size:13px; }
+  pre { background:#0b0f1a; border:1px solid var(--line); border-radius:8px;
+        padding:12px; overflow:auto; font-size:12.5px; color:#cdd6f4; }
+  ul { margin:8px 0 0; padding-left:18px; color:var(--muted); font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin-top:12px; font-size:13.5px; }
+  th,td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>RetailMind <span class="badge">demo</span></h1>
+  <p class="sub">Ask in plain English. The model picks a governed KPI — it never writes raw SQL.</p>
+
+  <div class="row">
+    <input id="q" placeholder="e.g. Which branch had the highest shrinkage this month?" autofocus />
+    <button id="go">Ask</button>
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <div id="out"></div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+async function loadSamples() {
+  try {
+    const r = await fetch('/api/samples');
+    const { samples } = await r.json();
+    $('chips').innerHTML = samples
+      .map(s => `<button class="chip">${s}</button>`).join('');
+    document.querySelectorAll('.chip').forEach(c =>
+      c.addEventListener('click', () => { $('q').value = c.textContent; ask(); }));
+  } catch (e) {}
+}
+
+function esc(s) { return String(s).replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); }
+
+function renderTable(cols, rows) {
+  if (!rows.length) return '';
+  const head = cols.map(c => `<th>${esc(c)}</th>`).join('');
+  const body = rows.slice(0, 25).map(r =>
+    `<tr>${cols.map(c => `<td>${esc(r[c])}</td>`).join('')}</tr>`).join('');
+  return `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function render(res) {
+  if (res.error) { $('out').innerHTML = `<div class="card">${esc(res.error)}</div>`; return; }
+  const assumptions = (res.assumptions || []).map(a => `<li>${esc(a)}</li>`).join('');
+  const sqlBlock = res.sql ? `<details><summary>Show SQL &amp; assumptions</summary>
+      <pre>${esc(res.sql)}</pre>
+      ${assumptions ? `<ul>${assumptions}</ul>` : ''}</details>` : '';
+  $('out').innerHTML = `<div class="card">
+      <div class="answer">${esc(res.answer)}</div>
+      <div class="meta">KPI: <code>${esc(res.kpi || '—')}</code> · intent parser: ${esc(res.mode)}</div>
+      ${renderTable(res.columns || [], res.rows || [])}
+      ${sqlBlock}
+    </div>`;
+}
+
+async function ask() {
+  const question = $('q').value.trim();
+  if (!question) return;
+  $('go').disabled = true;
+  $('out').innerHTML = `<div class="card meta">Thinking…</div>`;
+  try {
+    const r = await fetch('/api/ask', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question })
+    });
+    render(await r.json());
+  } catch (e) {
+    $('out').innerHTML = `<div class="card">Request failed: ${esc(e.message)}</div>`;
+  } finally {
+    $('go').disabled = false;
+  }
+}
+
+$('go').addEventListener('click', ask);
+$('q').addEventListener('keydown', e => { if (e.key === 'Enter') ask(); });
+loadSamples();
+</script>
+</body>
+</html>

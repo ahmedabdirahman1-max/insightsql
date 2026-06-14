@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# Optional: only needed if you set ANTHROPIC_API_KEY to use the real LLM intent parser.
+# The app runs fully without it via the deterministic rule-based parser.
+anthropic>=0.40
