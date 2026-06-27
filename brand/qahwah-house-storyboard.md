@@ -3,6 +3,28 @@
 
 A personal, customer-relatable storyboard built on the real story of Qahwah House — the Yemeni coffee house that brought coffee back to its birthplace, one sip at a time.
 
+> **How to read this:** Don't picture an ad talking *at* a crowd. Picture Ibrahim sitting across a small table from **you**, sliding a warm cup over, and telling you where it came from. One person. One cup. One story. Every line below is written to be heard that close.
+
+---
+
+## A Letter Before the Film *(read this first — it sets the whole tone)*
+
+> *Habibi,*
+>
+> *Before you watch anything, let me tell you something true.*
+>
+> *I grew up on a mountain in Yemen where my family has grown coffee for eight generations. My grandfather's hands smelled like cardamom. My father taught me to know a good cherry by its weight in my palm. When I left for America in 2011, I didn't bring much — but I brought our beans, and I brought the way my mother poured coffee for anyone who knocked on our door, stranger or not.*
+>
+> *People here knew my country from the news. From the hard headlines. I wanted them to know it the way I do — by its smell, its warmth, the sound of someone calling your order across a full room like family.*
+>
+> *So I opened a door in Dearborn. Then another, and another. Not to sell you a coffee. To hand you a piece of where I'm from — and to save you a seat.*
+>
+> *Whoever you are, wherever you're from: pull up a chair. This cup crossed an ocean to reach you.*
+>
+> *— Ibrahim*
+
+*(This letter is the soul of the storyboard. Print it on the wall. Put it on the cup sleeve. Use lines from it as voiceover. It is the most personal asset the brand has.)*
+
 ---
 
 ## Part 1 — Who Qahwah House Really Is (Research Brief)
@@ -41,85 +63,94 @@ Everything below was gathered from the brand's own pages, press, and customer re
 ## Part 2 — The Storyboard
 
 **Format:** 60–90 second brand film / social hero video (also works as a scrollable carousel).
-**Core emotional promise:** *You don't just buy a coffee here — you're handed something that crossed an ocean and eight generations to reach you. Sit down. You belong here.*
+**Core emotional promise:** *I'm not selling you a coffee. I'm handing you something my family carried across an ocean and eight generations — just for you. Sit down. You were family before you knew it.*
 
-Each frame below has: **Visual**, **On-screen text**, **Voiceover (VO)**, and **Why it lands** (the emotional job it does for the customer).
+Each frame below has: **Visual**, **On-screen text**, **Voiceover (VO)** — spoken low, like a confession, not an announcement — a **Whispered to you** line (the one beat that speaks directly to the viewer), and **Why it lands**.
 
 ---
 
 ### FRAME 1 — A Hand and a Seed
 **Visual:** Extreme close-up. A weathered farmer's hand in Yemen opens to reveal a single raw coffee cherry. Soft morning light, terraced mountains blurred behind. Silence except wind.
-**On-screen text:** *Every cup starts somewhere.*
-**VO:** "Before it was a coffee shop… it was a mountain. And a family."
-**Why it lands:** Starts with a human hand, not a logo. Universal — everyone understands the dignity of someone who grows something with care.
+**On-screen text:** *Every cup starts somewhere. Yours starts here.*
+**VO (Ibrahim, quiet):** "This hand is my father's. Before it was a coffee shop… it was a mountain. And a family. Ours."
+**Whispered to you:** *The cup you'll hold this morning began in a palm just like this one.*
+**Why it lands:** Starts with a human hand, not a logo — and names it as *his father's*, so it's a memory, not a stock shot. Everyone understands the dignity of someone who grows something with care.
 
 ---
 
 ### FRAME 2 — The Long Lineage
 **Visual:** A quick, warm montage — old photographs dissolving one into the next: a great-grandfather drying beans on a rooftop, a father teaching a son to sort cherries, the same terraced hills across decades.
 **On-screen text:** *8 generations. One family. One craft.*
-**VO:** "For eight generations, our family has farmed coffee in the land where coffee was born."
-**Why it lands:** Roots the brand in something bigger than a transaction. Customers crave authenticity — this is provenance you can feel.
+**VO (Ibrahim):** "My grandfather. His father. His father before him. Eight generations, all of us on the same hills, learning to read a coffee cherry by its weight in our hand."
+**Whispered to you:** *Somebody has been getting this ready for you for two hundred years.*
+**Why it lands:** Names the lineage as *people*, not a stat. The viewer feels personally anticipated — they were worth waiting eight generations for.
 
 ---
 
 ### FRAME 3 — Where Coffee Was Born
 **Visual:** A simple, beautiful map animation. A glowing point appears at **Mokha, Yemen**. Thin golden lines spread outward across the whole world.
 **On-screen text:** *Coffee didn't start in a café. It started in Yemen.*
-**VO:** "Six hundred years ago, the world drank its first cup — from a port called Mokha. We never forgot the way home."
-**Why it lands:** A surprising, shareable fact that reframes the customer's daily habit. *"The coffee I drink every morning… came from here."*
+**VO (Ibrahim):** "Every cup you've ever had — every morning, every late night — it traces back to one port. Mokha. My home. You've been drinking a little piece of Yemen your whole life. You just never knew its name."
+**Whispered to you:** *Your first coffee and mine came from the same place. We've been connected longer than you think.*
+**Why it lands:** Reframes the viewer's entire coffee history as already shared with the brand. Not "try us" — "you've been with us all along."
 
 ---
 
 ### FRAME 4 — The Journey Across the Ocean
 **Visual:** Burlap sacks of green beans being loaded; a horizon at sea; then a hard cut to a snowy Michigan street, a young Ibrahim looking up at an empty storefront with a key in his hand.
-**On-screen text:** *2011 — one man. One suitcase. One idea.*
-**VO:** "When I came to America, I carried two things: my family's beans… and a promise to show people who we really are."
-**Why it lands:** The immigrant arrival story. Hope, risk, starting over — deeply relatable to anyone who's ever begun again.
+**On-screen text:** *2011 — one man. One suitcase. One promise.*
+**VO (Ibrahim):** "I landed with almost nothing. Two things in my bag: my family's beans… and the way my mother poured coffee for anyone who knocked — stranger or not. I figured, that's enough to start a home."
+**Whispered to you:** *If you've ever had to start over from scratch — you already know this feeling. So do I.*
+**Why it lands:** The immigrant arrival story made tender and specific (his mother's pouring). Speaks to anyone who's ever begun again — homesickness, courage, hope.
 
 ---
 
 ### FRAME 5 — More Than the Headlines
 **Visual:** Newspaper fragments about war and hardship blur and fall away. Through them, warm light — the glow of a café window turning on at dawn.
-**On-screen text:** *We are more than what you've heard.*
-**VO:** "They knew my country for its struggles. I wanted them to know it for its coffee — and its kindness."
-**Why it lands:** Turns pain into pride. Invites the customer into a corrective, generous act just by walking in. Quiet, dignified, never preachy.
+**On-screen text:** *You've heard one story about my home. Let me tell you a warmer one.*
+**VO (Ibrahim):** "You knew my country from the hard news. I don't blame you. But that's not the Yemen I grew up in. Mine smells like cardamom and woodsmoke. Mine pours you tea before it asks your name. Let me introduce you to *that* one."
+**Whispered to you:** *Walk through this door, and you change the story you tell about us. That means everything to me.*
+**Why it lands:** Turns pain into pride and gently makes the viewer a participant — just by sitting down, they honor him. Dignified, intimate, never preachy.
 
 ---
 
 ### FRAME 6 — The First Pour
 **Visual:** Close-up of **Qishr** being poured — golden, spiced, steam rising. Cardamom, ginger, cinnamon scattered beside the cup. Hands wrap around the warm glass.
 **On-screen text:** *Sana'ani · Mofawar · Qishr · Adeni Chai*
-**VO:** "This is how we've made it for centuries. Cardamom. Ginger. Cinnamon. No shortcuts. No imitations."
-**Why it lands:** Sensory anchor. You can almost smell it. Differentiates from every generic latte chain — this is a taste you can't get anywhere else.
+**VO (Ibrahim):** "Close your eyes. Cardamom. Ginger. Cinnamon. This is the exact recipe my family has made for centuries — the smell of my childhood kitchen. The first time you taste it, a little of that becomes yours too."
+**Whispered to you:** *Take the first sip slow. That warmth on the back of your throat? That's home — mine, and now a little bit yours.*
+**Why it lands:** Sensory anchor tied to his memory, then *gifted* to the viewer. You can almost smell it — and it can't be bought from any generic chain.
 
 ---
 
 ### FRAME 7 — "Like We're Back Home"
 **Visual:** The café fills with life. A barista calls an order out loud across the room — heads turn, someone laughs. Yemeni murals on the wall. Strangers at shared tables. Students, elders, a mom with a stroller, friends mid-debate.
 **On-screen text:** *A piece of home — wherever you are.*
-**VO:** "When our people walk in, we call the orders out loud, just like back home. And everyone else? They become family too."
-**Why it lands:** This is the belonging beat. It says: *no matter who you are, there's a seat for you here.*
+**VO (Ibrahim):** "When my people walk in, we shout the orders across the room — loud, like back in Yemen. And the funny thing? Everyone who hears it starts to feel it too. You don't have to be from there to belong here. You just have to come in."
+**Whispered to you:** *Hear that name being called? Next time, it's yours. And someone will remember your usual.*
+**Why it lands:** The belonging beat. Promises the viewer the highest form of being seen: *being a regular, being remembered.*
 
 ---
 
-### FRAME 8 — The Faces (Customer Mirror)
-**Visual:** A series of warm, honest portraits, each holding a cup, each smiling at someone off-camera:
-- A Yemeni grandfather closing his eyes at the first sip — *home.*
-- A college student, laptop open, finally relaxed — *safe.*
-- Two friends from different backgrounds clinking glasses — *together.*
-- A first-timer raising eyebrows in delight — *discovery.*
+### FRAME 8 — The Faces (Customer Mirror — in their own words)
+**Visual:** A series of warm, honest portraits, each holding a cup. This time the voiceover steps back and lets **real customers** speak their own first-person lines straight to camera:
+- A Yemeni man, eyes closed at the first sip — *"The taste reminded me of home. Of Yemen."* → **home.**
+- A young woman, shoulders dropping: *"It's the one place I feel safe. There's no judgement here."* → **safe.**
+- Two friends from different backgrounds, glasses raised: *"It's just a coffee shop — but that's what makes it special. Our whole stories fit in one warm room."* → **together.**
+- A first-timer, eyebrows up, grinning: *"Okay — that's the best latte I've ever had."* → **discovery.**
 **On-screen text:** *No judgement. Just a seat at the table.*
-**VO:** "You don't have to be from Yemen to feel at home here. You just have to be thirsty for something real."
-**Why it lands:** The customer literally sees themselves on screen. Every viewer finds one face that is *them.*
+**VO (Ibrahim, soft, over the last face):** "Every one of these is a real person who walked in a stranger… and left a regular. You're next."
+**Whispered to you:** *Find the face that's you. We already saved that seat.*
+**Why it lands:** The viewer literally hears strangers say the thing they're quietly hoping for — and Ibrahim turns and points the promise at *them.* (Lines drawn from real Qahwah House customer quotes — see Sources.)
 
 ---
 
 ### FRAME 9 — From Their Hands to Yours
 **Visual:** A graceful match-cut: the farmer's hand from Frame 1 releasing the cherry → dissolves into a barista's hand sliding a finished cup across the counter to a customer. The same gesture, two ends of the world.
-**On-screen text:** *From one hand to another.*
-**VO:** "From a mountain in Yemen… to the cup in your hand. Nothing lost in between."
-**Why it lands:** Closes the loop emotionally. The customer is now the final, honored link in an 8-generation chain. They matter to the story.
+**On-screen text:** *From one hand to another. From mine to yours.*
+**VO (Ibrahim):** "Eight generations carried this — from my father's hand, across an ocean, to the hand sliding it across the counter to you. You're not the customer at the end of the line. You're the reason the whole line exists."
+**Whispered to you:** *Right now, holding this cup, you're the newest member of a family two hundred years old.*
+**Why it lands:** Closes the loop and crowns the viewer — not the buyer at the end, but the *point* of the entire 8-generation journey. The most personal possible reframe.
 
 ---
 
@@ -127,10 +158,11 @@ Each frame below has: **Visual**, **On-screen text**, **Voiceover (VO)**, and **
 **Visual:** Pull back to the warm, full café, golden hour light, the door open. The Qahwah House logo appears softly over the scene.
 **On-screen text:**
 > **QAHWAH HOUSE**
-> *Yemeni coffee. Born in Mokha. Shared with you.*
+> *Yemeni coffee. Born in Mokha. Made for you.*
 > *We're behind every smile in the morning.*
-**VO:** "Come in. Sit down. You're already part of the family."
-**Why it lands:** Ends on hospitality, not a hard sell. The CTA is an open door, exactly the brand's true voice.
+**VO (Ibrahim, warm, like he means you specifically):** "So… come in. Sit down. Your cup is already waiting. You were family before you knew it."
+**Whispered to you:** *The door is open. Your seat is the empty one. We'll leave the light on.*
+**Why it lands:** Ends on hospitality, not a sale. The CTA is an open door and a saved seat — exactly the brand's true voice, aimed at one person: the viewer.
 
 ---
 
@@ -157,9 +189,24 @@ So the brand team knows *exactly* who each beat is for:
 
 **Tone rules to keep it personal, never corporate:**
 1. Always lead with a *hand, a face, or a cup* — never a logo.
-2. Speak in **first person** ("our family," "I told myself") — it's Ibrahim's voice, and the customer's.
-3. Heritage is the gift, never the brag. Hospitality always wins the scene.
-4. Make the customer the *final link* in the chain — they complete the story.
+2. Speak as **"I" to "you,"** never "we" to "everyone." It's Ibrahim at a small table, talking to one person.
+3. Use **possessive, sensory memory** — "my father's hand," "my mother's pour," "the smell of my kitchen." Specifics feel true; generalities feel like advertising.
+4. Heritage is the gift, never the brag. Hospitality always wins the scene.
+5. Make the customer the *reason the story exists*, not the last step in it. They are family before they buy anything.
+6. Whisper, don't pitch. If a line could be shouted by a brand, cut it.
+
+---
+
+## Part 5 — Making It Personal *Beyond* the Film
+
+A storyboard is one moment. Belonging is built in many small ones. Carry the same voice into every touchpoint:
+
+- **The cup sleeve:** Print one line from Ibrahim's letter — *"This cup crossed an ocean to reach you."* The customer carries the story out the door.
+- **The name on the cup:** Don't just take an order — ask the name, and *use it next time.* Frame 7's promise ("someone will remember your usual") only works if the staff actually do.
+- **The first-timer ritual:** When someone says it's their first visit, a barista offers a tiny free pour of Qishr "the way Ibrahim's grandmother made it." A gift, not an upsell — the hospitality the brand is built on.
+- **The wall:** Hang the letter, and the line *"You were family before you knew it,"* where people sit. Let regulars read it a hundred times.
+- **Birthday / anniversary note:** "It's been a year since your first cup with us." Tiny, human, unforgettable.
+- **Share-back loop:** Invite customers to add their own one line — *"Qahwah House reminds me of ___"* — and feature real ones (like the customer voices in Frame 8). The brand's most personal content is the customers' own words.
 
 ---
 
