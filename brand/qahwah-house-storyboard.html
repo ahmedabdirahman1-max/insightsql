@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qahwah House — Brand Storyboard</title>
+<style>
+  :root{
+    --ink:#2b1a12;          /* deep coffee */
+    --ink-soft:#5a4435;
+    --cream:#f5ecdd;        /* parchment */
+    --cream-2:#efe2cc;
+    --gold:#c08a2d;         /* cardamom gold */
+    --gold-soft:#e7c987;
+    --rust:#9c4a2a;         /* roasted rust */
+    --line:#d8c4a3;
+    --paper:#fbf5ea;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Georgia","Iowan Old Style",serif;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #3a2418 0%, #241309 60%, #1a0d06 100%);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    padding:48px 20px 80px;
+  }
+  .wrap{max-width:1180px;margin:0 auto;}
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    text-align:center;color:var(--cream);
+    padding:28px 20px 36px;
+  }
+  .masthead .kicker{
+    letter-spacing:.42em;text-transform:uppercase;font-size:12px;
+    color:var(--gold-soft);font-family:Helvetica,Arial,sans-serif;margin-bottom:18px;
+  }
+  .masthead h1{
+    font-size:46px;line-height:1.05;margin:0 0 10px;font-weight:600;
+    text-shadow:0 2px 18px rgba(0,0,0,.4);
+  }
+  .masthead h1 .arabic{display:block;font-size:30px;color:var(--gold-soft);margin-bottom:8px;font-weight:400;}
+  .masthead .sub{font-style:italic;color:#e9dcc4;font-size:19px;max-width:680px;margin:6px auto 0;line-height:1.5;}
+  .masthead .meta{margin-top:22px;font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.12em;color:#cdb893;text-transform:uppercase;}
+  .masthead .meta span{margin:0 10px;}
+  .steam-rule{width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:26px auto 0;}
+
+  /* ---------- Letter card ---------- */
+  .letter{
+    background:var(--paper);border-radius:14px;margin:34px auto 10px;max-width:820px;
+    padding:40px 46px;box-shadow:0 24px 60px rgba(0,0,0,.45);
+    border:1px solid var(--line);position:relative;
+  }
+  .letter:before{content:"“";position:absolute;top:6px;left:20px;font-size:90px;color:var(--gold-soft);font-family:Georgia,serif;line-height:1;}
+  .letter h2{font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-family:Helvetica,Arial,sans-serif;margin:0 0 16px;}
+  .letter p{font-style:italic;font-size:17.5px;line-height:1.75;color:var(--ink-soft);margin:0 0 14px;}
+  .letter .sig{font-style:normal;text-align:right;font-size:18px;color:var(--ink);margin-top:8px;font-weight:600;}
+  .letter .note{font-style:normal;font-family:Helvetica,Arial,sans-serif;font-size:12.5px;color:#8a7257;border-top:1px dashed var(--line);padding-top:14px;margin-top:18px;line-height:1.5;}
+
+  /* ---------- Section label ---------- */
+  .board-head{text-align:center;color:var(--cream);margin:54px 0 6px;}
+  .board-head h2{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-soft);font-family:Helvetica,Arial,sans-serif;margin:0;}
+  .board-head p{color:#cdb893;font-style:italic;margin:8px 0 0;font-size:15px;}
+
+  /* ---------- Storyboard grid ---------- */
+  .grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:30px;
+  }
+  @media (max-width:820px){.grid{grid-template-columns:1fr;}.masthead h1{font-size:34px;}}
+
+  .panel{
+    background:var(--cream);border-radius:12px;overflow:hidden;
+    box-shadow:0 16px 40px rgba(0,0,0,.4);border:1px solid #cbb487;
+    display:flex;flex-direction:column;
+  }
+  .panel-top{display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(180deg,#efe2cc,#e6d6b9);border-bottom:1px solid #cbb487;}
+  .num{
+    width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;font-family:Helvetica,Arial,sans-serif;
+    font-weight:700;font-size:14px;flex:0 0 auto;
+  }
+  .panel-top .title{font-weight:600;font-size:16px;color:var(--ink);flex:1;}
+  .panel-top .dur{font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#8a7257;letter-spacing:.08em;}
+
+  /* the "frame" — 16:9 sketch window */
+  .frame{position:relative;background:#0e0905;aspect-ratio:16/9;border-bottom:1px solid #cbb487;}
+  .frame svg{position:absolute;inset:0;width:100%;height:100%;display:block;}
+  .frame .ost{
+    position:absolute;left:0;right:0;bottom:10px;text-align:center;
+    color:#fff;font-size:15px;font-style:italic;padding:0 18px;
+    text-shadow:0 2px 6px rgba(0,0,0,.9);line-height:1.35;
+  }
+  .frame .shotno{
+    position:absolute;top:8px;left:10px;font-family:Helvetica,Arial,sans-serif;
+    font-size:10px;letter-spacing:.14em;color:#e7c987;background:rgba(0,0,0,.35);
+    padding:3px 7px;border-radius:4px;text-transform:uppercase;
+  }
+  .frame .cam{
+    position:absolute;top:8px;right:10px;font-family:Helvetica,Arial,sans-serif;
+    font-size:10px;letter-spacing:.06em;color:#cdb893;background:rgba(0,0,0,.35);
+    padding:3px 7px;border-radius:4px;
+  }
+
+  .panel-body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:10px;}
+  .row{font-size:14.5px;line-height:1.5;}
+  .row .lbl{font-family:Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2px;}
+  .vo{color:var(--ink);}
+  .vo em{color:var(--ink-soft);}
+  .whisper{background:#fbf5ea;border-left:3px solid var(--gold);padding:8px 12px;border-radius:0 6px 6px 0;font-style:italic;color:var(--rust);font-size:14px;}
+  .why{font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#7a6650;line-height:1.5;border-top:1px dashed var(--line);padding-top:10px;}
+
+  /* ---------- Footer strip ---------- */
+  .filmstrip{display:flex;gap:6px;justify-content:center;margin:50px 0 0;flex-wrap:wrap;}
+  .filmstrip span{width:34px;height:24px;border-radius:3px;background:#2b1a12;border:1px solid #4a3422;}
+  .closing{text-align:center;color:#cdb893;font-style:italic;margin-top:30px;font-size:15px;}
+  .closing strong{color:var(--gold-soft);font-style:normal;}
+
+  /* personas + production */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px;}
+  .pcard{background:var(--cream);border-radius:10px;padding:18px;border:1px solid #cbb487;box-shadow:0 10px 26px rgba(0,0,0,.3);}
+  .pcard h3{margin:0 0 6px;font-size:16px;color:var(--ink);}
+  .pcard .seek{font-style:italic;color:var(--ink-soft);font-size:13.5px;margin:0 0 10px;}
+  .pcard .hook{font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.06em;color:var(--gold);text-transform:uppercase;}
+
+  .specbar{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin-top:26px;color:var(--ink-soft);}
+  .specbar h3{color:var(--gold);font-family:Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 12px;}
+  .specbar ul{margin:0;padding-left:18px;line-height:1.7;font-size:14.5px;}
+  .specbar b{color:var(--ink);}
+  @media print{body{background:#fff;padding:0;}.panel,.letter,.pcard,.specbar{box-shadow:none;}.masthead,.board-head,.closing{color:#2b1a12;}.masthead h1,.masthead .kicker,.board-head h2,.masthead h1 .arabic{color:#2b1a12;text-shadow:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <div class="kicker">Qahwah House &nbsp;·&nbsp; Brand Storyboard</div>
+    <h1><span class="arabic">قهوة</span>From One Hand to Another</h1>
+    <div class="sub">8 generations. One cup. Born on a mountain in Yemen — handed, warm, to you.</div>
+    <div class="meta"><span>60–90s Brand Film</span>·<span>10 Shots + Letter</span>·<span>Also a 10-slide carousel</span></div>
+    <div class="steam-rule"></div>
+  </header>
+
+  <!-- ================= LETTER ================= -->
+  <section class="letter">
+    <h2>A Letter Before the Film</h2>
+    <p>Habibi, before you watch anything — let me tell you something true.</p>
+    <p>I grew up on a mountain in Yemen where my family has grown coffee for eight generations. My grandfather's hands smelled like cardamom. My father taught me to know a good cherry by its weight in my palm.</p>
+    <p>When I left for America in 2011, I didn't bring much — but I brought our beans, and I brought the way my mother poured coffee for anyone who knocked on our door, stranger or not.</p>
+    <p>People here knew my country from the hard headlines. I wanted them to know it the way I do — by its smell, its warmth, the sound of someone calling your order across a full room like family.</p>
+    <p>So I opened a door in Dearborn. Then another, and another. Not to sell you a coffee. To hand you a piece of where I'm from — and to save you a seat.</p>
+    <p>Whoever you are, wherever you're from: pull up a chair. This cup crossed an ocean to reach you.</p>
+    <div class="sig">— Ibrahim</div>
+    <div class="note">This letter is the soul of the storyboard. Print it on the wall. Put a line on the cup sleeve. Use it as the film's opening voiceover. It is the most personal asset the brand has.</div>
+  </section>
+
+  <!-- ================= BOARD ================= -->
+  <div class="board-head">
+    <h2>The Storyboard — Shot by Shot</h2>
+    <p>Spoken low, like a confession — one person, one cup, one story.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- ===== FRAME 1 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">1</div><div class="title">A Hand &amp; a Seed</div><div class="dur">0:00–0:08</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 01</span><span class="cam">ECU · slow push-in</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1a"/><stop offset="1" stop-color="#0e0905"/></linearGradient></defs>
+          <rect width="320" height="180" fill="url(#g1)"/>
+          <!-- mountains -->
+          <path d="M0 150 L70 95 L120 130 L180 80 L250 125 L320 90 L320 180 L0 180Z" fill="#241608" opacity=".8"/>
+          <!-- sun glow -->
+          <circle cx="250" cy="55" r="40" fill="#c08a2d" opacity=".18"/>
+          <!-- cupped hand -->
+          <path d="M90 150 q70 -38 140 0 q-12 26 -70 26 q-58 0 -70 -26Z" fill="#e7c987" opacity=".9"/>
+          <path d="M90 150 q70 -38 140 0" fill="none" stroke="#9c4a2a" stroke-width="2" opacity=".5"/>
+          <!-- cherry -->
+          <circle cx="160" cy="138" r="9" fill="#9c4a2a"/><circle cx="157" cy="135" r="3" fill="#e7c987" opacity=".7"/>
+        </svg>
+        <div class="ost">Every cup starts somewhere. Yours starts here.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim, quiet</span>“This hand is my father's. Before it was a coffee shop… it was a mountain. And a family. Ours.”</div>
+        <div class="whisper">The cup you'll hold this morning began in a palm just like this one.</div>
+        <div class="why">Opens on a human hand, named as his father's — a memory, not a stock shot. Everyone understands the dignity of growing something with care.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 2 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">2</div><div class="title">The Long Lineage</div><div class="dur">0:08–0:16</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 02</span><span class="cam">Photo montage · dissolves</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#1c120a"/>
+          <path d="M0 140 L80 100 L160 130 L240 95 L320 125 L320 180 L0 180Z" fill="#2a1a0d"/>
+          <!-- three overlapping photo frames -->
+          <g transform="rotate(-7 70 90)"><rect x="34" y="58" width="72" height="64" fill="#f5ecdd" stroke="#c08a2d"/><circle cx="70" cy="84" r="15" fill="#9c4a2a"/><rect x="48" y="104" width="44" height="10" fill="#c9b48d"/></g>
+          <g transform="rotate(3 160 86)"><rect x="124" y="50" width="72" height="64" fill="#f5ecdd" stroke="#c08a2d"/><circle cx="160" cy="76" r="15" fill="#7a4a2a"/><rect x="138" y="96" width="44" height="10" fill="#c9b48d"/></g>
+          <g transform="rotate(9 250 92)"><rect x="214" y="60" width="72" height="64" fill="#f5ecdd" stroke="#c08a2d"/><circle cx="250" cy="86" r="15" fill="#9c4a2a"/><rect x="228" y="106" width="44" height="10" fill="#c9b48d"/></g>
+        </svg>
+        <div class="ost">8 generations. One family. One craft.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“My grandfather. His father. His father before him. Eight generations, all of us on the same hills — learning to read a coffee cherry by its weight in our hand.”</div>
+        <div class="whisper">Somebody has been getting this ready for you for two hundred years.</div>
+        <div class="why">Names the lineage as <em>people</em>, not a statistic. The viewer feels personally anticipated.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 3 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">3</div><div class="title">Where Coffee Was Born</div><div class="dur">0:16–0:26</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 03</span><span class="cam">Map animation</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#0f0a06"/>
+          <!-- abstract coast -->
+          <path d="M40 40 q60 20 30 60 q-20 30 30 50 l-40 30 L20 180 L0 180 L0 0 L40 0Z" fill="#241608" opacity=".7"/>
+          <!-- radiating lines -->
+          <g stroke="#c08a2d" stroke-width="1" opacity=".45" fill="none">
+            <path d="M150 95 Q230 40 300 60"/><path d="M150 95 Q240 90 310 110"/>
+            <path d="M150 95 Q220 150 300 150"/><path d="M150 95 Q90 40 30 30"/>
+            <path d="M150 95 Q70 110 20 140"/>
+          </g>
+          <circle cx="150" cy="95" r="22" fill="#c08a2d" opacity=".18"/>
+          <circle cx="150" cy="95" r="6" fill="#e7c987"/>
+          <text x="150" y="125" text-anchor="middle" fill="#e7c987" font-size="11" font-family="Helvetica" letter-spacing="2">MOKHA</text>
+        </svg>
+        <div class="ost">Coffee didn't start in a café. It started in Yemen.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“Every cup you've ever had traces back to one port. Mokha. My home. You've been drinking a little piece of Yemen your whole life — you just never knew its name.”</div>
+        <div class="whisper">Your first coffee and mine came from the same place. We've been connected longer than you think.</div>
+        <div class="why">Reframes the viewer's entire coffee history as already shared. Not “try us” — “you've been with us all along.”</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 4 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">4</div><div class="title">Across the Ocean</div><div class="dur">0:26–0:36</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 04</span><span class="cam">Match cut · sea → snow</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#15212b"/>
+          <rect width="320" height="70" y="0" fill="#24323d"/>
+          <!-- snow dots -->
+          <g fill="#cdd9e0" opacity=".7"><circle cx="40" cy="30" r="2"/><circle cx="90" cy="55" r="1.5"/><circle cx="150" cy="25" r="2"/><circle cx="210" cy="48" r="1.5"/><circle cx="270" cy="32" r="2"/><circle cx="300" cy="60" r="1.5"/><circle cx="120" cy="70" r="1.5"/></g>
+          <!-- storefront -->
+          <rect x="110" y="78" width="100" height="80" fill="#2b1a12"/>
+          <rect x="120" y="92" width="34" height="46" fill="#c08a2d" opacity=".55"/>
+          <rect x="166" y="92" width="34" height="46" fill="#3a2a1a"/>
+          <path d="M104 78 L160 56 L216 78Z" fill="#9c4a2a"/>
+          <!-- figure with suitcase + key -->
+          <circle cx="250" cy="120" r="8" fill="#e7c987"/>
+          <rect x="244" y="128" width="12" height="24" fill="#5a4435"/>
+          <rect x="258" y="138" width="14" height="11" fill="#3a2a1a" stroke="#c08a2d"/>
+        </svg>
+        <div class="ost">2011 — one man. One suitcase. One promise.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“I landed with almost nothing. Two things in my bag: my family's beans… and the way my mother poured coffee for anyone who knocked. I figured — that's enough to start a home.”</div>
+        <div class="whisper">If you've ever had to start over from scratch — you already know this feeling. So do I.</div>
+        <div class="why">The immigrant arrival, made tender and specific. Speaks to anyone who's ever begun again.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 5 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">5</div><div class="title">A Warmer Story</div><div class="dur">0:36–0:44</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 05</span><span class="cam">Newsprint dissolves to glow</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#0e0905"/>
+          <!-- fading newspaper rects -->
+          <g fill="#bcae97" opacity=".25"><rect x="20" y="30" width="70" height="50"/><rect x="30" y="100" width="60" height="44"/><rect x="240" y="40" width="64" height="48"/></g>
+          <g stroke="#8a7257" stroke-width="1" opacity=".2"><line x1="24" y1="40" x2="84" y2="40"/><line x1="24" y1="48" x2="84" y2="48"/><line x1="244" y1="50" x2="300" y2="50"/></g>
+          <!-- warm window glow center -->
+          <radialGradient id="g5" cx="50%" cy="55%" r="50%"><stop offset="0" stop-color="#e7c987"/><stop offset="1" stop-color="#0e0905"/></radialGradient>
+          <rect x="120" y="55" width="80" height="80" rx="6" fill="url(#g5)"/>
+          <line x1="160" y1="55" x2="160" y2="135" stroke="#9c4a2a" stroke-width="1.5" opacity=".5"/>
+          <line x1="120" y1="95" x2="200" y2="95" stroke="#9c4a2a" stroke-width="1.5" opacity=".5"/>
+        </svg>
+        <div class="ost">You've heard one story about my home. Let me tell a warmer one.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“You knew my country from the hard news. I don't blame you. But that's not the Yemen I grew up in. Mine smells like cardamom and woodsmoke. Mine pours you tea before it asks your name.”</div>
+        <div class="whisper">Walk through this door, and you change the story you tell about us. That means everything to me.</div>
+        <div class="why">Turns pain into pride and makes the viewer a participant — just by sitting down, they honor him. Dignified, never preachy.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 6 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">6</div><div class="title">The First Pour</div><div class="dur">0:44–0:52</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 06</span><span class="cam">Macro · steam in light</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#160d06"/>
+          <!-- steam -->
+          <g stroke="#e7c987" stroke-width="2" fill="none" opacity=".5"><path d="M150 60 q-12 -18 4 -34"/><path d="M168 62 q12 -18 -4 -34"/></g>
+          <!-- pour stream -->
+          <path d="M205 40 q-6 30 -30 48" stroke="#9c4a2a" stroke-width="4" fill="none" opacity=".8"/>
+          <!-- cup -->
+          <path d="M120 90 h70 l-8 50 q-2 12 -27 12 q-25 0 -27 -12Z" fill="#e7c987"/>
+          <ellipse cx="155" cy="90" rx="35" ry="9" fill="#3a2010"/>
+          <path d="M190 100 q22 4 14 26 q-6 14 -18 10" stroke="#e7c987" stroke-width="5" fill="none"/>
+          <!-- spice dots -->
+          <g fill="#9c4a2a"><circle cx="95" cy="150" r="3"/><circle cx="215" cy="152" r="3"/><circle cx="78" cy="135" r="2"/><circle cx="232" cy="138" r="2"/></g>
+        </svg>
+        <div class="ost">Sana'ani · Mofawar · Qishr · Adeni Chai</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“Close your eyes. Cardamom. Ginger. Cinnamon. The exact recipe my family has made for centuries — the smell of my childhood kitchen. The first time you taste it, a little of that becomes yours too.”</div>
+        <div class="whisper">Take the first sip slow. That warmth on the back of your throat? That's home — mine, and now a little bit yours.</div>
+        <div class="why">Sensory anchor tied to his memory, then <em>gifted</em> to the viewer. Can't be bought from any generic chain.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 7 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">7</div><div class="title">Like We're Back Home</div><div class="dur">0:52–1:02</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 07</span><span class="cam">Wide · room comes alive</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#2a1c12"/>
+          <rect width="320" height="46" fill="#22150c"/>
+          <!-- mural strip -->
+          <g fill="#c08a2d" opacity=".5"><path d="M0 24 l16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16 16 -16 16 16"/></g>
+          <!-- tables with people dots -->
+          <g><ellipse cx="70" cy="120" rx="26" ry="9" fill="#3a2a1a"/><circle cx="55" cy="104" r="7" fill="#e7c987"/><circle cx="86" cy="104" r="7" fill="#9c4a2a"/></g>
+          <g><ellipse cx="170" cy="140" rx="28" ry="10" fill="#3a2a1a"/><circle cx="154" cy="123" r="7" fill="#9c4a2a"/><circle cx="186" cy="123" r="7" fill="#e7c987"/></g>
+          <g><ellipse cx="255" cy="118" rx="24" ry="8" fill="#3a2a1a"/><circle cx="255" cy="102" r="7" fill="#e7c987"/></g>
+          <!-- speech burst (called order) -->
+          <path d="M232 60 l30 -6 -4 14 12 2 -22 12 2 -12 -12 -2Z" fill="#e7c987" opacity=".95"/>
+        </svg>
+        <div class="ost">A piece of home — wherever you are.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“When my people walk in, we shout the orders across the room — loud, like back in Yemen. And the funny thing? Everyone who hears it starts to feel it too. You don't have to be from there to belong here.”</div>
+        <div class="whisper">Hear that name being called? Next time, it's yours. And someone will remember your usual.</div>
+        <div class="why">The belonging beat — promises the highest form of being seen: becoming a regular, being remembered.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 8 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">8</div><div class="title">The Faces (Customer Mirror)</div><div class="dur">1:02–1:12</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 08</span><span class="cam">Portrait series · to camera</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#1a1009"/>
+          <!-- four portrait circles -->
+          <g>
+            <circle cx="85" cy="62" r="30" fill="#2e1f12" stroke="#c08a2d"/><circle cx="85" cy="56" r="12" fill="#9c4a2a"/><path d="M65 82 q20 -16 40 0" fill="#5a4435"/>
+            <text x="85" y="108" text-anchor="middle" fill="#e7c987" font-size="9" font-family="Helvetica">“…home.”</text>
+          </g>
+          <g>
+            <circle cx="235" cy="62" r="30" fill="#2e1f12" stroke="#c08a2d"/><circle cx="235" cy="56" r="12" fill="#e7c987"/><path d="M215 82 q20 -16 40 0" fill="#5a4435"/>
+            <text x="235" y="108" text-anchor="middle" fill="#e7c987" font-size="9" font-family="Helvetica">“…safe.”</text>
+          </g>
+          <g>
+            <circle cx="85" cy="138" r="26" fill="#2e1f12" stroke="#c08a2d"/><circle cx="85" cy="133" r="10" fill="#9c4a2a"/><path d="M69 154 q16 -12 32 0" fill="#5a4435"/>
+            <text x="85" y="176" text-anchor="middle" fill="#e7c987" font-size="9" font-family="Helvetica">“…together.”</text>
+          </g>
+          <g>
+            <circle cx="235" cy="138" r="26" fill="#2e1f12" stroke="#c08a2d"/><circle cx="235" cy="133" r="10" fill="#e7c987"/><path d="M219 154 q16 -12 32 0" fill="#5a4435"/>
+            <text x="235" y="176" text-anchor="middle" fill="#e7c987" font-size="9" font-family="Helvetica">“…discovery.”</text>
+          </g>
+        </svg>
+        <div class="ost">No judgement. Just a seat at the table.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">Real customer voices · to camera</span><em>“The taste reminded me of home.” · “There's no judgement here.” · “It's just a coffee shop — but that's what makes it special.” · “Best latte I've ever had.”</em></div>
+        <div class="row vo"><span class="lbl">VO — Ibrahim, soft</span>“Every one of these is a real person who walked in a stranger… and left a regular. You're next.”</div>
+        <div class="whisper">Find the face that's you. We already saved that seat.</div>
+        <div class="why">Viewers hear strangers say the thing they quietly hope for — then Ibrahim points it at them. (Lines drawn from real reviews.)</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 9 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">9</div><div class="title">From Their Hands to Yours</div><div class="dur">1:12–1:20</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 09</span><span class="cam">Match cut · hand → hand</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#140c06"/>
+          <radialGradient id="g9" cx="50%" cy="50%" r="40%"><stop offset="0" stop-color="#c08a2d" stop-opacity=".3"/><stop offset="1" stop-color="#140c06"/></radialGradient>
+          <rect width="320" height="180" fill="url(#g9)"/>
+          <!-- left hand (farmer) -->
+          <path d="M20 130 q50 -20 90 -6 q-6 18 -44 18 q-30 0 -46 -12Z" fill="#9c4a2a" opacity=".85"/>
+          <!-- right hand (barista) -->
+          <path d="M300 130 q-50 -20 -90 -6 q6 18 44 18 q30 0 46 -12Z" fill="#e7c987" opacity=".9"/>
+          <!-- cup passing in middle -->
+          <path d="M142 92 h36 l-4 26 q-1 7 -14 7 q-13 0 -14 -7Z" fill="#f5ecdd"/>
+          <ellipse cx="160" cy="92" rx="18" ry="5" fill="#3a2010"/>
+          <g stroke="#e7c987" stroke-width="1.5" fill="none" opacity=".5"><path d="M156 80 q-6 -8 2 -16"/><path d="M166 80 q6 -8 -2 -16"/></g>
+        </svg>
+        <div class="ost">From one hand to another. From mine to yours.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim</span>“Eight generations carried this — from my father's hand, across an ocean, to the hand sliding it across the counter to you. You're not the customer at the end of the line. You're the reason the whole line exists.”</div>
+        <div class="whisper">Right now, holding this cup, you're the newest member of a family two hundred years old.</div>
+        <div class="why">Closes the loop and crowns the viewer — not the buyer at the end, but the point of the whole journey.</div>
+      </div>
+    </article>
+
+    <!-- ===== FRAME 10 ===== -->
+    <article class="panel">
+      <div class="panel-top"><div class="num">10</div><div class="title">The Invitation</div><div class="dur">1:20–1:30</div></div>
+      <div class="frame">
+        <span class="shotno">Shot 10</span><span class="cam">Pull back · open door, golden hour</span>
+        <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+          <rect width="320" height="180" fill="#1d130a"/>
+          <!-- warm spill from open door -->
+          <path d="M150 36 h60 v120 h-60Z" fill="#2b1a12"/>
+          <radialGradient id="g10" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#e7c987"/><stop offset="1" stop-color="#9c4a2a" stop-opacity="0"/></radialGradient>
+          <path d="M150 40 h40 v112 h-40Z" fill="url(#g10)"/>
+          <path d="M120 156 L150 40 L150 152Z" fill="#c08a2d" opacity=".25"/>
+          <!-- cup on a sill -->
+          <path d="M64 132 h26 l-3 18 q-1 5 -10 5 q-9 0 -10 -5Z" fill="#e7c987"/>
+          <ellipse cx="77" cy="132" rx="13" ry="4" fill="#3a2010"/>
+          <!-- logo wordmark -->
+          <text x="240" y="100" text-anchor="middle" fill="#e7c987" font-size="13" font-family="Georgia" letter-spacing="1">QAHWAH</text>
+          <text x="240" y="118" text-anchor="middle" fill="#e7c987" font-size="13" font-family="Georgia" letter-spacing="3">HOUSE</text>
+        </svg>
+        <div class="ost">Born in Mokha. Made for you.</div>
+      </div>
+      <div class="panel-body">
+        <div class="row vo"><span class="lbl">VO — Ibrahim, warm</span>“So… come in. Sit down. Your cup is already waiting. You were family before you knew it.”</div>
+        <div class="whisper">The door is open. Your seat is the empty one. We'll leave the light on.</div>
+        <div class="why">Ends on hospitality, not a sale. The CTA is an open door and a saved seat — aimed at one person: the viewer.</div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="filmstrip">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="closing">“We are behind every smile in the morning.” &nbsp;—&nbsp; <strong>Ibrahim Alhasbani, Founder</strong></div>
+
+  <!-- ================= PERSONAS ================= -->
+  <div class="board-head"><h2>Who Each Beat Speaks To</h2></div>
+  <div class="cards">
+    <div class="pcard"><h3>The Homesick</h3><p class="seek">Diaspora — a taste of home, to be seen.</p><div class="hook">Hooks on Frames 5 &amp; 7</div></div>
+    <div class="pcard"><h3>The Explorer</h3><p class="seek">Curious foodie — authentic, story-rich discovery.</p><div class="hook">Hooks on Frames 3 &amp; 6</div></div>
+    <div class="pcard"><h3>The Belonger</h3><p class="seek">Student / regular — a safe “third place,” no judgement.</p><div class="hook">Hooks on Frames 7 &amp; 8</div></div>
+    <div class="pcard"><h3>The Conscious Buyer</h3><p class="seek">Direct trade, real provenance, ethics.</p><div class="hook">Hooks on Frames 2 &amp; 9</div></div>
+    <div class="pcard"><h3>The Connector</h3><p class="seek">Brings friends — a place that makes them look thoughtful.</p><div class="hook">Hooks on Frame 8</div></div>
+  </div>
+
+  <!-- ================= PRODUCTION ================= -->
+  <div class="specbar">
+    <h3>Production Notes</h3>
+    <ul>
+      <li><b>Palette:</b> parchment cream, deep coffee brown, cardamom gold, roasted rust. Warm, golden-hour light throughout.</li>
+      <li><b>Voice:</b> Ibrahim, first person, low and unhurried — “I” to “you,” never “we” to “everyone.”</li>
+      <li><b>Music:</b> single oud or qanun line, sparse; let room sound (the called-out order in Frame 7) carry the emotion.</li>
+      <li><b>Type:</b> serif for the heart-lines, clean sans for labels. Arabic “قهوة” as a recurring motif.</li>
+      <li><b>Cut-downs:</b> 15s teaser = Frames 1 → 6 → 9 → 10. Carousel = one frame per slide, on-screen text as caption.</li>
+      <li><b>Beyond the film:</b> cup-sleeve line, remembered names, free first-timer Qishr “the way Ibrahim's grandmother made it,” the letter on the wall.</li>
+    </ul>
+  </div>
+
+  <div class="closing" style="margin-top:40px;font-size:12px;opacity:.7;">
+    Built from Qahwah House's own story &amp; press — qahwahhouse.com/about-us · Middle East Eye · Barista Magazine · NPR · The New Arab · Arab American News.
+  </div>
+
+</div>
+</body>
+</html>
